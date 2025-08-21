@@ -19,9 +19,16 @@ repositories {
 }
 
 dependencies {
+	// JPA
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	// H2
+	implementation 'com.h2database:h2'
+
 	// Spring AOP
 	implementation 'org.springframework.boot:spring-boot-starter-aop'
 
+	compileOnly 'org.projectlombok:lombok'
+	annotationProcessor 'org.projectlombok:lombok'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
